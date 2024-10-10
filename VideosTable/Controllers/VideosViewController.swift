@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  VideosViewController.swift
 //  VideosTable
 //
 //  Created by Alexey on 10.10.24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class VideosViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,4 +16,3 @@ class ViewController: UIViewController {
 
 
 }
-

@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		8A003D832CB7DD830045B0B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A003D822CB7DD830045B0B8 /* AppDelegate.swift */; };
 		8A003D852CB7DD830045B0B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A003D842CB7DD830045B0B8 /* SceneDelegate.swift */; };
-		8A003D872CB7DD830045B0B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A003D862CB7DD830045B0B8 /* ViewController.swift */; };
 		8A003D8A2CB7DD830045B0B8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8A003D892CB7DD830045B0B8 /* Base */; };
 		8A003D8C2CB7DD840045B0B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A003D8B2CB7DD840045B0B8 /* Assets.xcassets */; };
 		8A003D8F2CB7DD840045B0B8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8A003D8E2CB7DD840045B0B8 /* Base */; };
 		8A003D9A2CB7DD840045B0B8 /* VideosTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A003D992CB7DD840045B0B8 /* VideosTableTests.swift */; };
 		8A003DA42CB7DD840045B0B8 /* VideosTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A003DA32CB7DD840045B0B8 /* VideosTableUITests.swift */; };
 		8A003DA62CB7DD840045B0B8 /* VideosTableUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A003DA52CB7DD840045B0B8 /* VideosTableUITestsLaunchTests.swift */; };
+		8A003DB42CB7E2F60045B0B8 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A003DB32CB7E2F60045B0B8 /* VideosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		8A003D7F2CB7DD830045B0B8 /* VideosTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideosTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A003D822CB7DD830045B0B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A003D842CB7DD830045B0B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8A003D862CB7DD830045B0B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8A003D892CB7DD830045B0B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A003D8B2CB7DD840045B0B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A003D8E2CB7DD840045B0B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		8A003D9F2CB7DD840045B0B8 /* VideosTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideosTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A003DA32CB7DD840045B0B8 /* VideosTableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosTableUITests.swift; sourceTree = "<group>"; };
 		8A003DA52CB7DD840045B0B8 /* VideosTableUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosTableUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8A003DB32CB7E2F60045B0B8 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +99,11 @@
 		8A003D812CB7DD830045B0B8 /* VideosTable */ = {
 			isa = PBXGroup;
 			children = (
+				8A003DB52CB7E37B0045B0B8 /* Storyboards */,
+				8A003DB22CB7E2D20045B0B8 /* Controllers */,
 				8A003D822CB7DD830045B0B8 /* AppDelegate.swift */,
 				8A003D842CB7DD830045B0B8 /* SceneDelegate.swift */,
-				8A003D862CB7DD830045B0B8 /* ViewController.swift */,
-				8A003D882CB7DD830045B0B8 /* Main.storyboard */,
 				8A003D8B2CB7DD840045B0B8 /* Assets.xcassets */,
-				8A003D8D2CB7DD840045B0B8 /* LaunchScreen.storyboard */,
 				8A003D902CB7DD840045B0B8 /* Info.plist */,
 			);
 			path = VideosTable;
@@ -125,6 +124,23 @@
 				8A003DA52CB7DD840045B0B8 /* VideosTableUITestsLaunchTests.swift */,
 			);
 			path = VideosTableUITests;
+			sourceTree = "<group>";
+		};
+		8A003DB22CB7E2D20045B0B8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A003DB32CB7E2F60045B0B8 /* VideosViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8A003DB52CB7E37B0045B0B8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8A003D882CB7DD830045B0B8 /* Main.storyboard */,
+				8A003D8D2CB7DD840045B0B8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +274,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A003D872CB7DD830045B0B8 /* ViewController.swift in Sources */,
 				8A003D832CB7DD830045B0B8 /* AppDelegate.swift in Sources */,
+				8A003DB42CB7E2F60045B0B8 /* VideosViewController.swift in Sources */,
 				8A003D852CB7DD830045B0B8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +458,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RXY22JVFVW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VideosTable/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -472,6 +489,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RXY22JVFVW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VideosTable/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
