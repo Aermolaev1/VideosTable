@@ -16,6 +16,25 @@
 		8A003DA42CB7DD840045B0B8 /* VideosTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A003DA32CB7DD840045B0B8 /* VideosTableUITests.swift */; };
 		8A003DA62CB7DD840045B0B8 /* VideosTableUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A003DA52CB7DD840045B0B8 /* VideosTableUITestsLaunchTests.swift */; };
 		8A003DB42CB7E2F60045B0B8 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A003DB32CB7E2F60045B0B8 /* VideosViewController.swift */; };
+		8A003DF02CB7E55E0045B0B8 /* kissifyPreview.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DDD2CB7E55D0045B0B8 /* kissifyPreview.mp4 */; };
+		8A003DF12CB7E55E0045B0B8 /* the_person_in_the_photo_he_is_celebrating_flexing_muscels_a_low.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DDE2CB7E55D0045B0B8 /* the_person_in_the_photo_he_is_celebrating_flexing_muscels_a_low.mp4 */; };
+		8A003DF22CB7E55E0045B0B8 /* Gen_3_Alpha_Turbo_1700360043,_a_dog_and_a_person,_,_Cropped_combined.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DDF2CB7E55D0045B0B8 /* Gen_3_Alpha_Turbo_1700360043,_a_dog_and_a_person,_,_Cropped_combined.mp4 */; };
+		8A003DF32CB7E55E0045B0B8 /* Hugs_preview.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DE02CB7E55D0045B0B8 /* Hugs_preview.mp4 */; };
+		8A003DF42CB7E55E0045B0B8 /* dino.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DE12CB7E55D0045B0B8 /* dino.mp4 */; };
+		8A003DF52CB7E55E0045B0B8 /* Hugs_compile_reduced.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DE22CB7E55E0045B0B8 /* Hugs_compile_reduced.mp4 */; };
+		8A003DF62CB7E55E0045B0B8 /* superhero.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DE32CB7E55E0045B0B8 /* superhero.mp4 */; };
+		8A003DF72CB7E55E0045B0B8 /* two_persons_in_the_photo_are_happy_turning_to_each_other_hugging.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DE42CB7E55E0045B0B8 /* two_persons_in_the_photo_are_happy_turning_to_each_other_hugging.mp4 */; };
+		8A003DF82CB7E55E0045B0B8 /* Anim_FlexMuscles__87pct_smaller.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DE52CB7E55E0045B0B8 /* Anim_FlexMuscles__87pct_smaller.mp4 */; };
+		8A003DF92CB7E55E0045B0B8 /* morph.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DE62CB7E55E0045B0B8 /* morph.mp4 */; };
+		8A003DFA2CB7E55E0045B0B8 /* Anim_HuggingPet__88pct_smaller.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DE72CB7E55E0045B0B8 /* Anim_HuggingPet__88pct_smaller.mp4 */; };
+		8A003DFB2CB7E55E0045B0B8 /* Anim_MakeKiss__90pct_smaller.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DE82CB7E55E0045B0B8 /* Anim_MakeKiss__90pct_smaller.mp4 */; };
+		8A003DFC2CB7E55E0045B0B8 /* cake.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DE92CB7E55E0045B0B8 /* cake.mp4 */; };
+		8A003DFD2CB7E55E0045B0B8 /* paywallA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DEA2CB7E55E0045B0B8 /* paywallA.mp4 */; };
+		8A003DFE2CB7E55E0045B0B8 /* Start_with_a_selfie_of_two_people_smiling_and_close_together_The.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DEB2CB7E55E0045B0B8 /* Start_with_a_selfie_of_two_people_smiling_and_close_together_The.mp4 */; };
+		8A003DFF2CB7E55E0045B0B8 /* Start_with_a_static_selfie_of_a_woman_Suddenly_the_scene_comes_to.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DEC2CB7E55E0045B0B8 /* Start_with_a_static_selfie_of_a_woman_Suddenly_the_scene_comes_to.mp4 */; };
+		8A003E002CB7E55E0045B0B8 /* Anim_Memories__88pct_smaller.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DED2CB7E55E0045B0B8 /* Anim_Memories__88pct_smaller.mp4 */; };
+		8A003E012CB7E55E0045B0B8 /* kissify.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DEE2CB7E55E0045B0B8 /* kissify.mp4 */; };
+		8A003E022CB7E55E0045B0B8 /* anime.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DEF2CB7E55E0045B0B8 /* anime.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +68,25 @@
 		8A003DA32CB7DD840045B0B8 /* VideosTableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosTableUITests.swift; sourceTree = "<group>"; };
 		8A003DA52CB7DD840045B0B8 /* VideosTableUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosTableUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8A003DB32CB7E2F60045B0B8 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
+		8A003DDD2CB7E55D0045B0B8 /* kissifyPreview.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = kissifyPreview.mp4; sourceTree = "<group>"; };
+		8A003DDE2CB7E55D0045B0B8 /* the_person_in_the_photo_he_is_celebrating_flexing_muscels_a_low.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = the_person_in_the_photo_he_is_celebrating_flexing_muscels_a_low.mp4; sourceTree = "<group>"; };
+		8A003DDF2CB7E55D0045B0B8 /* Gen_3_Alpha_Turbo_1700360043,_a_dog_and_a_person,_,_Cropped_combined.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gen_3_Alpha_Turbo_1700360043,_a_dog_and_a_person,_,_Cropped_combined.mp4"; sourceTree = "<group>"; };
+		8A003DE02CB7E55D0045B0B8 /* Hugs_preview.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hugs_preview.mp4; sourceTree = "<group>"; };
+		8A003DE12CB7E55D0045B0B8 /* dino.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dino.mp4; sourceTree = "<group>"; };
+		8A003DE22CB7E55E0045B0B8 /* Hugs_compile_reduced.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hugs_compile_reduced.mp4; sourceTree = "<group>"; };
+		8A003DE32CB7E55E0045B0B8 /* superhero.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = superhero.mp4; sourceTree = "<group>"; };
+		8A003DE42CB7E55E0045B0B8 /* two_persons_in_the_photo_are_happy_turning_to_each_other_hugging.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = two_persons_in_the_photo_are_happy_turning_to_each_other_hugging.mp4; sourceTree = "<group>"; };
+		8A003DE52CB7E55E0045B0B8 /* Anim_FlexMuscles__87pct_smaller.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Anim_FlexMuscles__87pct_smaller.mp4; sourceTree = "<group>"; };
+		8A003DE62CB7E55E0045B0B8 /* morph.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = morph.mp4; sourceTree = "<group>"; };
+		8A003DE72CB7E55E0045B0B8 /* Anim_HuggingPet__88pct_smaller.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Anim_HuggingPet__88pct_smaller.mp4; sourceTree = "<group>"; };
+		8A003DE82CB7E55E0045B0B8 /* Anim_MakeKiss__90pct_smaller.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Anim_MakeKiss__90pct_smaller.mp4; sourceTree = "<group>"; };
+		8A003DE92CB7E55E0045B0B8 /* cake.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cake.mp4; sourceTree = "<group>"; };
+		8A003DEA2CB7E55E0045B0B8 /* paywallA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = paywallA.mp4; sourceTree = "<group>"; };
+		8A003DEB2CB7E55E0045B0B8 /* Start_with_a_selfie_of_two_people_smiling_and_close_together_The.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Start_with_a_selfie_of_two_people_smiling_and_close_together_The.mp4; sourceTree = "<group>"; };
+		8A003DEC2CB7E55E0045B0B8 /* Start_with_a_static_selfie_of_a_woman_Suddenly_the_scene_comes_to.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Start_with_a_static_selfie_of_a_woman_Suddenly_the_scene_comes_to.mp4; sourceTree = "<group>"; };
+		8A003DED2CB7E55E0045B0B8 /* Anim_Memories__88pct_smaller.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Anim_Memories__88pct_smaller.mp4; sourceTree = "<group>"; };
+		8A003DEE2CB7E55E0045B0B8 /* kissify.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = kissify.mp4; sourceTree = "<group>"; };
+		8A003DEF2CB7E55E0045B0B8 /* anime.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = anime.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +143,7 @@
 				8A003D842CB7DD830045B0B8 /* SceneDelegate.swift */,
 				8A003D8B2CB7DD840045B0B8 /* Assets.xcassets */,
 				8A003D902CB7DD840045B0B8 /* Info.plist */,
+				8A003DB62CB7E4A00045B0B8 /* Videos */,
 			);
 			path = VideosTable;
 			sourceTree = "<group>";
@@ -141,6 +180,32 @@
 				8A003D8D2CB7DD840045B0B8 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8A003DB62CB7E4A00045B0B8 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				8A003DE52CB7E55E0045B0B8 /* Anim_FlexMuscles__87pct_smaller.mp4 */,
+				8A003DE72CB7E55E0045B0B8 /* Anim_HuggingPet__88pct_smaller.mp4 */,
+				8A003DE82CB7E55E0045B0B8 /* Anim_MakeKiss__90pct_smaller.mp4 */,
+				8A003DED2CB7E55E0045B0B8 /* Anim_Memories__88pct_smaller.mp4 */,
+				8A003DEF2CB7E55E0045B0B8 /* anime.mp4 */,
+				8A003DE92CB7E55E0045B0B8 /* cake.mp4 */,
+				8A003DE12CB7E55D0045B0B8 /* dino.mp4 */,
+				8A003DDF2CB7E55D0045B0B8 /* Gen_3_Alpha_Turbo_1700360043,_a_dog_and_a_person,_,_Cropped_combined.mp4 */,
+				8A003DE22CB7E55E0045B0B8 /* Hugs_compile_reduced.mp4 */,
+				8A003DE02CB7E55D0045B0B8 /* Hugs_preview.mp4 */,
+				8A003DEE2CB7E55E0045B0B8 /* kissify.mp4 */,
+				8A003DDD2CB7E55D0045B0B8 /* kissifyPreview.mp4 */,
+				8A003DE62CB7E55E0045B0B8 /* morph.mp4 */,
+				8A003DEA2CB7E55E0045B0B8 /* paywallA.mp4 */,
+				8A003DEB2CB7E55E0045B0B8 /* Start_with_a_selfie_of_two_people_smiling_and_close_together_The.mp4 */,
+				8A003DEC2CB7E55E0045B0B8 /* Start_with_a_static_selfie_of_a_woman_Suddenly_the_scene_comes_to.mp4 */,
+				8A003DE32CB7E55E0045B0B8 /* superhero.mp4 */,
+				8A003DDE2CB7E55D0045B0B8 /* the_person_in_the_photo_he_is_celebrating_flexing_muscels_a_low.mp4 */,
+				8A003DE42CB7E55E0045B0B8 /* two_persons_in_the_photo_are_happy_turning_to_each_other_hugging.mp4 */,
+			);
+			path = Videos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,9 +312,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A003E022CB7E55E0045B0B8 /* anime.mp4 in Resources */,
+				8A003DF82CB7E55E0045B0B8 /* Anim_FlexMuscles__87pct_smaller.mp4 in Resources */,
+				8A003DF22CB7E55E0045B0B8 /* Gen_3_Alpha_Turbo_1700360043,_a_dog_and_a_person,_,_Cropped_combined.mp4 in Resources */,
+				8A003DFF2CB7E55E0045B0B8 /* Start_with_a_static_selfie_of_a_woman_Suddenly_the_scene_comes_to.mp4 in Resources */,
+				8A003DF72CB7E55E0045B0B8 /* two_persons_in_the_photo_are_happy_turning_to_each_other_hugging.mp4 in Resources */,
+				8A003DF42CB7E55E0045B0B8 /* dino.mp4 in Resources */,
+				8A003DF12CB7E55E0045B0B8 /* the_person_in_the_photo_he_is_celebrating_flexing_muscels_a_low.mp4 in Resources */,
 				8A003D8C2CB7DD840045B0B8 /* Assets.xcassets in Resources */,
+				8A003DFB2CB7E55E0045B0B8 /* Anim_MakeKiss__90pct_smaller.mp4 in Resources */,
+				8A003DF02CB7E55E0045B0B8 /* kissifyPreview.mp4 in Resources */,
+				8A003DFD2CB7E55E0045B0B8 /* paywallA.mp4 in Resources */,
+				8A003DF92CB7E55E0045B0B8 /* morph.mp4 in Resources */,
+				8A003DF32CB7E55E0045B0B8 /* Hugs_preview.mp4 in Resources */,
 				8A003D8F2CB7DD840045B0B8 /* Base in Resources */,
+				8A003DFC2CB7E55E0045B0B8 /* cake.mp4 in Resources */,
+				8A003E012CB7E55E0045B0B8 /* kissify.mp4 in Resources */,
 				8A003D8A2CB7DD830045B0B8 /* Base in Resources */,
+				8A003DF52CB7E55E0045B0B8 /* Hugs_compile_reduced.mp4 in Resources */,
+				8A003E002CB7E55E0045B0B8 /* Anim_Memories__88pct_smaller.mp4 in Resources */,
+				8A003DF62CB7E55E0045B0B8 /* superhero.mp4 in Resources */,
+				8A003DFE2CB7E55E0045B0B8 /* Start_with_a_selfie_of_two_people_smiling_and_close_together_The.mp4 in Resources */,
+				8A003DFA2CB7E55E0045B0B8 /* Anim_HuggingPet__88pct_smaller.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
