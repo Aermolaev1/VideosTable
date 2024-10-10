@@ -35,6 +35,7 @@
 		8A003E002CB7E55E0045B0B8 /* Anim_Memories__88pct_smaller.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DED2CB7E55E0045B0B8 /* Anim_Memories__88pct_smaller.mp4 */; };
 		8A003E012CB7E55E0045B0B8 /* kissify.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DEE2CB7E55E0045B0B8 /* kissify.mp4 */; };
 		8A003E022CB7E55E0045B0B8 /* anime.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DEF2CB7E55E0045B0B8 /* anime.mp4 */; };
+		8A003E052CB7EF510045B0B8 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A003E042CB7EF510045B0B8 /* VideoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		8A003DED2CB7E55E0045B0B8 /* Anim_Memories__88pct_smaller.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Anim_Memories__88pct_smaller.mp4; sourceTree = "<group>"; };
 		8A003DEE2CB7E55E0045B0B8 /* kissify.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = kissify.mp4; sourceTree = "<group>"; };
 		8A003DEF2CB7E55E0045B0B8 /* anime.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = anime.mp4; sourceTree = "<group>"; };
+		8A003E042CB7EF510045B0B8 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,12 +139,12 @@
 		8A003D812CB7DD830045B0B8 /* VideosTable */ = {
 			isa = PBXGroup;
 			children = (
-				8A003DB52CB7E37B0045B0B8 /* Storyboards */,
 				8A003DB22CB7E2D20045B0B8 /* Controllers */,
 				8A003D822CB7DD830045B0B8 /* AppDelegate.swift */,
 				8A003D842CB7DD830045B0B8 /* SceneDelegate.swift */,
 				8A003D8B2CB7DD840045B0B8 /* Assets.xcassets */,
 				8A003D902CB7DD840045B0B8 /* Info.plist */,
+				8A003DB52CB7E37B0045B0B8 /* Storyboards */,
 				8A003DB62CB7E4A00045B0B8 /* Videos */,
 			);
 			path = VideosTable;
@@ -168,6 +170,7 @@
 		8A003DB22CB7E2D20045B0B8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8A003E032CB7EF3D0045B0B8 /* Cells */,
 				8A003DB32CB7E2F60045B0B8 /* VideosViewController.swift */,
 			);
 			path = Controllers;
@@ -206,6 +209,14 @@
 				8A003DE42CB7E55E0045B0B8 /* two_persons_in_the_photo_are_happy_turning_to_each_other_hugging.mp4 */,
 			);
 			path = Videos;
+			sourceTree = "<group>";
+		};
+		8A003E032CB7EF3D0045B0B8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8A003E042CB7EF510045B0B8 /* VideoCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A003D832CB7DD830045B0B8 /* AppDelegate.swift in Sources */,
+				8A003E052CB7EF510045B0B8 /* VideoCell.swift in Sources */,
 				8A003DB42CB7E2F60045B0B8 /* VideosViewController.swift in Sources */,
 				8A003D852CB7DD830045B0B8 /* SceneDelegate.swift in Sources */,
 			);
