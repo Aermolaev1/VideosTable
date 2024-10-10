@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -37,11 +37,11 @@
                                 <rect key="frame" x="0.0" y="99" width="393" height="719"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="217" id="6ws-jr-Xgo" customClass="VideoCell" customModule="VideosTable" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="217"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="256" id="6ws-jr-Xgo" customClass="VideoCell" customModule="VideosTable" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="256"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6ws-jr-Xgo" id="Dzx-q2-4bD">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="217"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="256"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYU-Ea-6rb">
@@ -51,10 +51,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRu-xV-Utu">
-                                                    <rect key="frame" x="36" y="48" width="321" height="150"/>
+                                                    <rect key="frame" x="16" y="48" width="361" height="200"/>
                                                     <subviews>
                                                         <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="1l6-nY-L8x">
-                                                            <rect key="frame" x="142" y="56.666666666666671" width="37" height="37"/>
+                                                            <rect key="frame" x="162" y="81.666666666666657" width="37" height="37"/>
                                                             <color key="color" red="0.23921568630000001" green="0.67450980390000004" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </activityIndicatorView>
                                                     </subviews>
@@ -62,18 +62,18 @@
                                                     <constraints>
                                                         <constraint firstItem="1l6-nY-L8x" firstAttribute="centerY" secondItem="aRu-xV-Utu" secondAttribute="centerY" id="DRx-Kz-PfW"/>
                                                         <constraint firstItem="1l6-nY-L8x" firstAttribute="centerX" secondItem="aRu-xV-Utu" secondAttribute="centerX" id="iPY-ib-j56"/>
-                                                        <constraint firstAttribute="height" constant="150" id="q4n-BO-S54"/>
+                                                        <constraint firstAttribute="height" constant="200" id="q4n-BO-S54"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstItem="aRu-xV-Utu" firstAttribute="leading" secondItem="Dzx-q2-4bD" secondAttribute="leadingMargin" constant="16" id="acp-as-abd"/>
+                                                <constraint firstAttribute="trailing" secondItem="aRu-xV-Utu" secondAttribute="trailing" constant="16" id="6VA-5N-Xys"/>
+                                                <constraint firstItem="aRu-xV-Utu" firstAttribute="leading" secondItem="Dzx-q2-4bD" secondAttribute="leading" constant="16" id="FgM-gU-eF0"/>
                                                 <constraint firstItem="BYU-Ea-6rb" firstAttribute="leading" secondItem="Dzx-q2-4bD" secondAttribute="leadingMargin" constant="16" id="afm-MW-hAL"/>
                                                 <constraint firstItem="BYU-Ea-6rb" firstAttribute="top" secondItem="Dzx-q2-4bD" secondAttribute="topMargin" constant="8" id="ahM-AL-Ebt"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="BYU-Ea-6rb" secondAttribute="trailing" constant="16" id="eFf-Um-aL9"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="aRu-xV-Utu" secondAttribute="trailing" constant="16" id="p4r-2l-GNS"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="aRu-xV-Utu" secondAttribute="bottom" constant="8" id="wLg-qZ-btU"/>
+                                                <constraint firstAttribute="bottom" secondItem="aRu-xV-Utu" secondAttribute="bottom" constant="8" id="gzg-5g-LJQ"/>
                                                 <constraint firstItem="aRu-xV-Utu" firstAttribute="top" secondItem="BYU-Ea-6rb" secondAttribute="bottom" constant="8" id="yUB-et-nCj"/>
                                             </constraints>
                                         </tableViewCellContentView>

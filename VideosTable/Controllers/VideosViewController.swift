@@ -5,60 +5,71 @@
 //  Created by Alexey on 10.10.24.
 //
 
+//
+//  VideosViewController.swift
+//  VideosTable
+//
+//  Created by Alexey on 10.10.24.
+//
+
 import UIKit
-import AVKit
 import AVFoundation
 
-class VideosViewController: UIViewController {
-    @IBOutlet weak var tableView: UITableView!
-    
-    var videoItems: [VideoItem] = []
+final class VideosViewController: UIViewController {
+    @IBOutlet private weak var tableView: UITableView!
+    private var videoItems: [VideoItem] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        if let items = loadJson(filename: "templates") {
-            self.videoItems = [items,items,items,items].flatMap{ $0 }
+        if let items = fetchModelsFrom(filename: "templates") {
+            videoItems = [items,items,items,items].flatMap{ $0 }
             tableView.reloadData()
         }
-        // Do any additional setup after loading the view.
     }
     
-    func loadJson(filename fileName: String) -> [VideoItem]? {
-        if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
-            do {
-                let data = try Data(contentsOf: url)
-                let decoder = JSONDecoder()
-                let jsonData = try decoder.decode([VideoItem].self, from: data)
-                return jsonData
-            } catch {
-                print("error:\(error)")
-            }
+    private func fetchModelsFrom(filename fileName: String) -> [VideoItem]? {
+        guard let url = Bundle.main.url(
+            forResource: fileName,
+            withExtension: "json"
+        ) else { return nil }
+        do {
+            let data = try Data(contentsOf: url)
+            let decoder = JSONDecoder()
+            let jsonData = try decoder.decode([VideoItem].self, from: data)
+            return jsonData
+        } catch {
+            print("error:\(error)")
+            return nil
         }
-        return nil
     }
 }
 
 
 extension VideosViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return videoItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "VideoCell", for: indexPath) as! VideoCell
-        cell.configure(with: videoItems[indexPath.row])
+        let cell = tableView.dequeueReusableCell(
+            withIdentifier: "VideoCell",
+            for: indexPath
+        )
+        if let cell = cell as? VideoCell{
+            cell.configure(with: videoItems[indexPath.row])
+        }
         return cell
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        guard let videoCell = (cell as? VideoCell) else { return }
-        videoCell.playerLayer?.player?.play()
+        guard let videoCell = cell as? VideoCell else { return }
+        videoCell.player.play()
     }
     
     func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        guard let videoCell = (cell as? VideoCell) else { return }
-        videoCell.playerLayer?.player?.pause()
+        guard let videoCell = cell as? VideoCell else { return }
+        videoCell.player.pause()
     }
 }

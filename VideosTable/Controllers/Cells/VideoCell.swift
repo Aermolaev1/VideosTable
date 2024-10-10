@@ -8,103 +8,126 @@
 import UIKit
 import AVFoundation
 
-class VideoCell: UITableViewCell {
+final class VideoCell: UITableViewCell {
     
-    @IBOutlet weak var videoView: UIView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet private weak var videoView: UIView!
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
     
-    var loopObserver: Any?
-    var playerLooper: NSObject?
-    var playerLayer: AVPlayerLayer?
+    private var loopObserver: Any?
+    private var playerLooper: NSObject?
+    private var playerLayer: AVPlayerLayer?
+    private var currentUrl: String? = nil
+    private var observer: NSKeyValueObservation?
+    private var preparePlayerWorkItem: DispatchWorkItem? = nil
     
+    public var player = AVPlayer()
     
     override func awakeFromNib() {
         super.awakeFromNib()
         let playerLayer = AVPlayerLayer()
-        playerLayer.frame = self.videoView.bounds
+        playerLayer.frame = videoView.bounds
         playerLayer.videoGravity = .resizeAspectFill
         videoView.layer.cornerRadius = 8.0
-        self.videoView.layer.insertSublayer(playerLayer, at: 0)
+        videoView.layer.insertSublayer(playerLayer, at: 0)
+        playerLayer.player = player
         self.playerLayer = playerLayer
+        player.isMuted = true
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        self.removeObservers()
+        preparePlayerWorkItem?.cancel()
+        preparePlayerWorkItem = nil
+        player.replaceCurrentItem(with: nil)
+        removeObservers()
     }
     
     deinit {
         self.removeObservers()
     }
     
-    
     func configure(with item: VideoItem) {
-        
         titleLabel.text = item.title
         configurePlayer(with: item.videoUrl)
-        //  videoPlayer.play()
     }
+}
+
+//MARK: player item creation
+private extension VideoCell {
     
     func configurePlayer(with urlString: String) {
-        let name = (urlString as NSString).deletingPathExtension
-        guard let videoPath = Bundle.main.path(forResource: name, ofType: "mp4") else { return }
-        let videoURL = URL(fileURLWithPath: videoPath)
-        let videoPlayer = AVPlayer(url: videoURL)
-        videoPlayer.isMuted = true
-        
-        //        Solution with PlayerLooper is very slow
-        //        let playerItem = AVPlayerItem(url:videoURL)
-        //        let videoPlayer = AVQueuePlayer(items: [playerItem])
-        //        playerLooper = AVPlayerLooper(player: videoPlayer, templateItem: playerItem)
-        //        self.playerLayer?.player = videoPlayer
-        
-        
-        videoPlayer.addObserver(self, forKeyPath: "timeControlStatus", options: [.old, .new], context: nil)
-        self.playerLayer?.player = videoPlayer
-        self.loopVideo(videoPlayer)
+        currentUrl = urlString
+        let item = DispatchWorkItem(block: { [weak self] in
+            guard let self else { return }
+            let url = self.fileUrl(with: urlString)
+            if let url {
+                self.loopVideo()
+                self.makeObserver()
+                self.player.replaceCurrentItem(with: AVPlayerItem(url: url))
+                self.playerLayer?.player = self.player
+                DispatchQueue.main.async { [weak self] in
+                    guard let self,
+                          self.currentUrl == urlString else { return }
+                }
+            } else {
+                self.player.replaceCurrentItem(with: nil)
+                self.removeObservers()
+            }
+        })
+        DispatchQueue.global(qos: .userInitiated).async(execute: item)
+        preparePlayerWorkItem = item
     }
     
-    func loopVideo(_ videoPlayer: AVPlayer) {
-        loopObserver = NotificationCenter.default.addObserver(forName: Notification.Name.AVPlayerItemDidPlayToEndTime, object: nil, queue: nil) { notification in
-            self.playerLayer?.player?.seek(to: CMTime.zero)
-            self.playerLayer?.player?.play()
-        }
+    func fileUrl(with urlString: String) -> URL? {
+        let name = (urlString as NSString).deletingPathExtension
+        guard let videoPath = Bundle.main.path(forResource: name, ofType: "mp4") else { return nil }
+        return URL(fileURLWithPath: videoPath)
+    }
+}
+
+//MARK: Observers
+private extension VideoCell {
+    
+    func makeObserver() {
+        observer = player.observe(\.timeControlStatus, options:  [.new, .old], changeHandler: { (player, change) in
+            DispatchQueue.main.async { [weak self] in
+                guard let self else { return }
+                switch player.timeControlStatus {
+                case .playing:
+                    //   print("playing")
+                    self.activityIndicator.stopAnimating()
+                case .paused:
+                    // print("paused")
+                    self.activityIndicator.startAnimating()
+                    
+                case .waitingToPlayAtSpecifiedRate:
+                    // print("waiting")
+                    self.activityIndicator.startAnimating()
+                @unknown default:
+                    break
+                }
+            }
+         })
     }
     
     func removeObservers() {
         if let obs = loopObserver {
             NotificationCenter.default.removeObserver(obs)
         }
-        self.playerLayer?.player?.removeObserver(self, forKeyPath: "timeControlStatus")
+        observer?.invalidate()
+        observer = nil
     }
     
-    override public func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if keyPath == "timeControlStatus", let change = change, let newValue = change[NSKeyValueChangeKey.newKey] as? Int, let oldValue = change[NSKeyValueChangeKey.oldKey] as? Int {
-            let oldStatus = AVPlayer.TimeControlStatus(rawValue: oldValue)
-            let newStatus = AVPlayer.TimeControlStatus(rawValue: newValue)
-            if newStatus != oldStatus {
-                DispatchQueue.main.async {[weak self] in
-                    if let status = newStatus {
-                        switch status {
-                        case .playing:
-                            //   print("playing")
-                            self?.playerLayer?.player?.play()
-                            self?.activityIndicator.stopAnimating()
-                        case .paused:
-                            // print("paused")
-                            self?.activityIndicator.stopAnimating()
-                            
-                        case .waitingToPlayAtSpecifiedRate:
-                            // print("waiting")
-                            self?.activityIndicator.startAnimating()
-                            
-                        @unknown default:
-                            break
-                        }
-                    }
-                }
-            }
+    func loopVideo() {
+        loopObserver = NotificationCenter.default.addObserver(
+            forName: Notification.Name.AVPlayerItemDidPlayToEndTime,
+            object: player.currentItem,
+            queue: .main
+        ) { [weak self] notification in
+            guard let self else { return }
+            self.player.seek(to: CMTime.zero)
+            self.player.play()
         }
     }
 }
