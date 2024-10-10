@@ -12,24 +12,43 @@ import AVFoundation
 class VideosViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
+    var videoItems: [VideoItem] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.reloadData()
+        
+        if let items = loadJson(filename: "templates") {
+            self.videoItems = [items,items,items,items].flatMap{ $0 }
+            tableView.reloadData()
+        }
         // Do any additional setup after loading the view.
+    }
+    
+    func loadJson(filename fileName: String) -> [VideoItem]? {
+        if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: url)
+                let decoder = JSONDecoder()
+                let jsonData = try decoder.decode([VideoItem].self, from: data)
+                return jsonData
+            } catch {
+                print("error:\(error)")
+            }
+        }
+        return nil
     }
 }
 
 
 extension VideosViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 16
+        return videoItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "VideoCell", for: indexPath) as! VideoCell
-        let videoPath = Bundle.main.path(forResource: "cake", ofType: "mp4")!
-        cell.configure(with: videoPath)
+        cell.configure(with: videoItems[indexPath.row])
         return cell
     }
     

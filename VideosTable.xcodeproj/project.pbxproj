@@ -36,6 +36,8 @@
 		8A003E012CB7E55E0045B0B8 /* kissify.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DEE2CB7E55E0045B0B8 /* kissify.mp4 */; };
 		8A003E022CB7E55E0045B0B8 /* anime.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A003DEF2CB7E55E0045B0B8 /* anime.mp4 */; };
 		8A003E052CB7EF510045B0B8 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A003E042CB7EF510045B0B8 /* VideoCell.swift */; };
+		8A003E0B2CB818850045B0B8 /* templates.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A003E0A2CB818850045B0B8 /* templates.json */; };
+		8A003E0D2CB818A80045B0B8 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A003E0C2CB818A80045B0B8 /* VideoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		8A003DEE2CB7E55E0045B0B8 /* kissify.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = kissify.mp4; sourceTree = "<group>"; };
 		8A003DEF2CB7E55E0045B0B8 /* anime.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = anime.mp4; sourceTree = "<group>"; };
 		8A003E042CB7EF510045B0B8 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		8A003E0A2CB818850045B0B8 /* templates.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = templates.json; sourceTree = "<group>"; };
+		8A003E0C2CB818A80045B0B8 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,11 +143,13 @@
 		8A003D812CB7DD830045B0B8 /* VideosTable */ = {
 			isa = PBXGroup;
 			children = (
+				8A003E082CB8184C0045B0B8 /* Models */,
 				8A003DB22CB7E2D20045B0B8 /* Controllers */,
 				8A003D822CB7DD830045B0B8 /* AppDelegate.swift */,
 				8A003D842CB7DD830045B0B8 /* SceneDelegate.swift */,
 				8A003D8B2CB7DD840045B0B8 /* Assets.xcassets */,
 				8A003D902CB7DD840045B0B8 /* Info.plist */,
+				8A003E092CB818580045B0B8 /* SupportedFiles */,
 				8A003DB52CB7E37B0045B0B8 /* Storyboards */,
 				8A003DB62CB7E4A00045B0B8 /* Videos */,
 			);
@@ -217,6 +223,22 @@
 				8A003E042CB7EF510045B0B8 /* VideoCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		8A003E082CB8184C0045B0B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A003E0C2CB818A80045B0B8 /* VideoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8A003E092CB818580045B0B8 /* SupportedFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8A003E0A2CB818850045B0B8 /* templates.json */,
+			);
+			path = SupportedFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +355,7 @@
 				8A003D8C2CB7DD840045B0B8 /* Assets.xcassets in Resources */,
 				8A003DFB2CB7E55E0045B0B8 /* Anim_MakeKiss__90pct_smaller.mp4 in Resources */,
 				8A003DF02CB7E55E0045B0B8 /* kissifyPreview.mp4 in Resources */,
+				8A003E0B2CB818850045B0B8 /* templates.json in Resources */,
 				8A003DFD2CB7E55E0045B0B8 /* paywallA.mp4 in Resources */,
 				8A003DF92CB7E55E0045B0B8 /* morph.mp4 in Resources */,
 				8A003DF32CB7E55E0045B0B8 /* Hugs_preview.mp4 in Resources */,
@@ -369,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A003E0D2CB818A80045B0B8 /* VideoModel.swift in Sources */,
 				8A003D832CB7DD830045B0B8 /* AppDelegate.swift in Sources */,
 				8A003E052CB7EF510045B0B8 /* VideoCell.swift in Sources */,
 				8A003DB42CB7E2F60045B0B8 /* VideosViewController.swift in Sources */,

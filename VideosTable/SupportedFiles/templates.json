@@ -1,0 +1,292 @@
+[
+    {
+       "id":"1",
+       "title":"Birthday Cake",
+       "videoUrl":"cake.mp4",
+       "previewVideoUrl":"cake.mp4",
+       "prompt":"make the subject hold a birthday cake and celebrate",
+       "enhanced":true,
+       "price":0,
+       "availableFrom":"2023-09-01T00:00:00Z",
+       "expiresAt":"2024-03-31T23:59:59Z",
+       "order":1,
+       "instructions":[
+          {
+             "id":"3_1",
+             "scenarioId":"3",
+             "photoUrl":"Instructions Sweet Moments(1).png",
+             "description":"Select photo with just one person"
+          }
+       ]
+    },
+   {
+      "id":"2",
+      "title":"Hugging",
+      "videoUrl":"Hugs_compile_reduced.mp4",
+      "previewVideoUrl":"Hugs_preview.mp4",
+      "order":2,
+      "prompt":"make them hug",
+      "enhanced":true,
+      "description":null,
+      "price":1,
+      "availableFrom":"2024-09-29T00:00:00.000Z",
+      "expiresAt":"2039-09-30T00:00:00.000Z",
+      "createdAt":"2024-09-30T21:12:23.257Z",
+      "instructions":[
+         {
+            "id":"vo7o6y2qbev6n2lbm76j90tj",
+            "scenarioId":"aiy7i0fiy7uk98q37v9kcfic",
+            "photoUrl":"ifzhg3t54av4tjcd0es2ulih.png",
+            "description":"Use an existing selfie or combine two photos, ensuring both people are clearly visible and positioned close to each other",
+            "title":"Choose or Create a Close Selfie:"
+         },
+         {
+            "id":"kl013zpjgnmvoodzq8sc8q8w",
+            "scenarioId":"aiy7i0fiy7uk98q37v9kcfic",
+            "photoUrl":"zydghquuytzj9n07quoeqey4.png",
+            "description":"Avoid blurry or low-resolution images for the best results.",
+            "title":"Focus on Quality:"
+         },
+         {
+            "id":"hbleg25ytlnn9c0o5oh98tnp",
+            "scenarioId":"aiy7i0fiy7uk98q37v9kcfic",
+            "photoUrl":"k5csru1rebciqtbofdsj5tmr.png",
+            "description":"Ensure the image isn’t tightly cropped, with no borders or gaps between the two people, and leave space around the faces for natural movement.\n",
+            "title":"Focus on Composition:"
+         },
+         {
+            "id":"infbmfn8y9h1clxl4qs2rj98",
+            "scenarioId":"aiy7i0fiy7uk98q37v9kcfic",
+            "photoUrl":"vlwjgejiayjwnsqkurggnq6r.png",
+            "description":"Ensure both individuals are close together but not touching the edges of the photo.",
+            "title":"Keep People Close:"
+         },
+         {
+            "id":"zskbz7n578nijfih1ry56jvy",
+            "scenarioId":"aiy7i0fiy7uk98q37v9kcfic",
+            "photoUrl":"zhmtr546rfwjgz933rbmqkzj.png",
+            "description":"If the result isn’t perfect, tweak the prompt or use \"Enhance Picture\" to refine the quality and match your vision. Try to modify the prompt to “people are hugging with emotions”, or describe your scene to help AI “a grandma on the left and a woman on the right, they are hugging\"",
+            "title":"Adjust the Prompt (Optional):"
+         }
+      ]
+   },
+   {
+      "id":"3",
+      "title":"Kissing",
+      "videoUrl":"kissify.mp4",
+      "previewVideoUrl":"kissifyPreview.mp4",
+      "order":3,
+      "prompt":"make them kiss",
+      "enhanced":true,
+      "description":null,
+      "price":1,
+      "availableFrom":"2024-09-01T00:00:00.000Z",
+      "expiresAt":"2039-09-02T00:00:00.000Z",
+      "createdAt":"2039-10-01T15:10:37.043Z",
+      "instructions":[
+         {
+            "id":"qb6t6mr9ei3s5lmdtvnffz3z",
+            "scenarioId":"f3hv4ehjv4xcbq3mrfiqjyp4",
+            "photoUrl":"vxc39xjr35bxv16ld4y0bufm.png",
+            "description":"Use an existing selfie or combine two photos, ensuring both people are clearly visible and close to each other.",
+            "title":"Choose or Create a Close Selfie:"
+         },
+         {
+            "id":"fc4jvucwnt8t2i8mim0ljsfg",
+            "scenarioId":"f3hv4ehjv4xcbq3mrfiqjyp4",
+            "photoUrl":"bw2watko08e81dztw9pyghhi.png",
+            "description":"Avoid blurry or low-resolution images, external objects like stickers or aggressive filters that could distort the faces for the best results.",
+            "title":"Focus on Quality:"
+         },
+         {
+            "id":"dj7qe5knsvhnvvtllqgbmdmn",
+            "scenarioId":"f3hv4ehjv4xcbq3mrfiqjyp4",
+            "photoUrl":"n02x62gjcgg97zwh7f0ix4bx.png",
+            "description":"Ensure the image isn’t tightly cropped, with no borders or gaps between the two people. Leave space around the faces for natural movement.",
+            "title":"Focus on Composition:"
+         },
+         {
+            "id":"xirviaheeqqa0aydfrjox18l",
+            "scenarioId":"f3hv4ehjv4xcbq3mrfiqjyp4",
+            "photoUrl":"pyuqrb4ylrlg15utrdwhm8pm.png",
+            "description":"Make sure the individuals are close together for a natural, intimate kiss scene but avoid touching the external edges of the whole photo. For the best result, have them looking at each other",
+            "title":"Keep People Close:"
+         },
+         {
+            "id":"v1jpe5jfc8dky5j88kmcs83a",
+            "scenarioId":"f3hv4ehjv4xcbq3mrfiqjyp4",
+            "photoUrl":"k4kaazdkupncya5b307xhphk.png",
+            "description":"If the result isn’t exactly what you wanted, tweak the prompt. You can also play with different prompts, like describing a scene (e.g., “make the m kissing with love”, \"people are kissing\" or a more descriptive one “a woman on the left and a man on the right, they are kissing\") to create unique videos. Use \"Enhance Picture\" as needed to improve quality",
+            "title":"Adjust the Prompt (Optional):"
+         }
+      ]
+   },
+   {
+      "id":"4",
+      "title":"Friendly Kiss",
+      "videoUrl":"Anim_MakeKiss__90pct_smaller.mp4",
+      "previewVideoUrl":"Start_with_a_selfie_of_two_people__smiling_and_close_together__The_scene_transitions_seamlessly_as_t_a6dd05.mp4",
+      "prompt":"two persons in the photo, they are looking at each other, kissing each other gently",
+      "enhanced":false,
+      "price":1,
+      "availableFrom":"2023-10-01T00:00:00Z",
+      "expiresAt":"2023-12-31T23:59:59Z",
+      "order":4,
+      "instructions":[
+         {
+            "id":"1_1",
+            "scenarioId":"1",
+            "photoUrl":"ai_trainer_a_selfie_on_a_beach_side_a_young_man_and_a_woman_wea_18ac254c-b425-4fa7-a233-69c6251dcfa6.png",
+            "description":"Select photo with a clear selfie of two people",
+            
+         }
+      ]
+   },
+   {
+      "id":"5",
+      "title":"Revive Old Photos",
+      "videoUrl":"Anim_Memories__88pct_smaller.mp4",
+      "previewVideoUrl":"two_persons_in_the_photo_are_happy__turning_to_each_other__hugging_each_other_f7d9f3.mp4",
+      "prompt":"hugging people are celebrating",
+      "enhanced":false,
+      "price":1,
+      "availableFrom":"2023-11-01T00:00:00Z",
+      "expiresAt":"2024-01-31T23:59:59Z",
+      "order":5,
+      "instructions":[
+         {
+            "id":"2_1",
+            "scenarioId":"2",
+            "photoUrl":"ai_trainer_a_photo_from_the_70th_an_american_mother_and_her_hus_cd8e4673-66c1-4752-8854-c698fd7a1301.png",
+            "description":"Select photo with a clear selfie of exactly two people",
+            
+         }
+      ]
+   },
+   {
+      "id":"6",
+      "title":"Flex Your Muscles",
+      "videoUrl":"Anim_FlexMuscles__87pct_smaller.mp4",
+      "previewVideoUrl":"the_person_in_the_photo__he_is_celebrating__flexing_muscels__a_low_angle_shot_9a6836.mp4",
+      "prompt":"the person in the photo, he is celebrating, flexing muscles, a low angle shot",
+      "enhanced":false,
+      "price":2,
+      "availableFrom":"2023-12-01T00:00:00Z",
+      "expiresAt":"2024-02-28T23:59:59Z",
+      "order":6,
+      "instructions":[
+         {
+            "id":"4_1",
+            "scenarioId":"4",
+            "photoUrl":"ai_trainer_a_cinematic_foto_of_a_young_men_t-shirt_jeans_full_h_94d95aba-0659-4a29-8f2a-9063b5308fb9.png",
+            "description":"Select a clear photo of one person",
+            
+         }
+      ]
+   },
+   {
+      "id":"7",
+      "title":"Paws & Claws Cuddle",
+      "videoUrl":"Anim_HuggingPet__88pct_smaller.mp4",
+      "previewVideoUrl":"Gen-3 Alpha Turbo 1700360043, a dog and a person, , Cropped - combined ( (1)__75pct_smaller.mp4",
+      "prompt":"a dog and a person, the person is hugging the dog, the person on the right is embracing the dog, the person is hugging the happy dog",
+      "enhanced":false,
+      "price":2,
+      "availableFrom":"2023-10-15T00:00:00Z",
+      "expiresAt":"2024-01-15T23:59:59Z",
+      "order":7,
+      "instructions":[
+         {
+            "id":"5_1",
+            "scenarioId":"5",
+            "photoUrl":"hug_your_dog.png",
+            "description":"Upload a combined photo made of a photo of your dog on the left and yourself on the right",
+            
+         }
+      ]
+   },
+   {
+      "id":"8",
+      "title":"Become a Superhero",
+      "videoUrl":"superhero.mp4",
+      "previewVideoUrl":"superhero.mp4",
+      "prompt":"a dog and a person, the person is hugging the dog, the person on the right is embracing the dog, the person is hugging the happy dog",
+      "enhanced":false,
+      "price":2,
+      "availableFrom":"2024-12-01T00:00:00.000Z",
+      "expiresAt":"2025-10-01T00:00:00.000Z",
+      "order":8,
+      "instructions":[
+         {
+            "id":"5_1",
+            "scenarioId":"5",
+            "photoUrl":"hug_your_dog.png",
+            "description":"Upload a combined photo made of a photo of your dog on the left and yourself on the right",
+            
+         }
+      ]
+   },
+   {
+      "id":"9",
+      "title":"Epic Pet Challange",
+      "videoUrl":"dino.mp4",
+      "previewVideoUrl":"dino.mp4",
+      "prompt":"a dog and a person, the person is hugging the dog, the person on the right is embracing the dog, the person is hugging the happy dog",
+      "enhanced":false,
+      "price":2,
+      "availableFrom":"2024-12-01T00:00:00.000Z",
+      "expiresAt":"2025-10-01T00:00:00.000Z",
+      "order":9,
+      "instructions":[
+         {
+            "id":"5_1",
+            "scenarioId":"5",
+            "photoUrl":"hug_your_dog.png",
+            "description":"Upload a combined photo made of a photo of your dog on the left and yourself on the right",
+            
+         }
+      ]
+   },
+   {
+      "id":"10",
+      "title":"Anime Crush",
+      "videoUrl":"anime.mp4",
+      "previewVideoUrl":"anime.mp4",
+      "prompt":"a dog and a person, the person is hugging the dog, the person on the right is embracing the dog, the person is hugging the happy dog",
+      "enhanced":false,
+      "price":2,
+      "availableFrom":"2024-12-01T00:00:00.000Z",
+      "expiresAt":"2025-10-01T00:00:00.000Z",
+      "order":10,
+      "instructions":[
+         {
+            "id":"5_1",
+            "scenarioId":"5",
+            "photoUrl":"hug_your_dog.png",
+            "description":"Upload a combined photo made of a photo of your dog on the left and yourself on the right",
+            
+         }
+      ]
+   },
+   {
+      "id":"11",
+      "title":"Mr. Beast",
+      "videoUrl":"morph.mp4",
+      "previewVideoUrl":"morph.mp4",
+      "prompt":"a dog and a person, the person is hugging the dog, the person on the right is embracing the dog, the person is hugging the happy dog",
+      "enhanced":false,
+      "price":2,
+      "availableFrom":"2024-12-01T00:00:00.000Z",
+      "expiresAt":"2025-10-01T00:00:00.000Z",
+      "order":11,
+      "instructions":[
+         {
+            "id":"5_1",
+            "scenarioId":"5",
+            "photoUrl":"hug_your_dog.png",
+            "description":"Upload a combined photo made of a photo of your dog on the left and yourself on the right",
+            
+         }
+      ]
+   }
+]

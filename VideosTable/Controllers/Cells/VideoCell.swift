@@ -39,10 +39,19 @@ class VideoCell: UITableViewCell {
     }
     
     
-    func configure(with url: String) {
-        let videoPath = Bundle.main.path(forResource: "cake", ofType: "mp4")!
+    func configure(with item: VideoItem) {
+        
+        titleLabel.text = item.title
+        configurePlayer(with: item.videoUrl)
+        //  videoPlayer.play()
+    }
+    
+    func configurePlayer(with urlString: String) {
+        let name = (urlString as NSString).deletingPathExtension
+        guard let videoPath = Bundle.main.path(forResource: name, ofType: "mp4") else { return }
         let videoURL = URL(fileURLWithPath: videoPath)
         let videoPlayer = AVPlayer(url: videoURL)
+        videoPlayer.isMuted = true
         
         //        Solution with PlayerLooper is very slow
         //        let playerItem = AVPlayerItem(url:videoURL)
@@ -54,7 +63,6 @@ class VideoCell: UITableViewCell {
         videoPlayer.addObserver(self, forKeyPath: "timeControlStatus", options: [.old, .new], context: nil)
         self.playerLayer?.player = videoPlayer
         self.loopVideo(videoPlayer)
-      //  videoPlayer.play()
     }
     
     func loopVideo(_ videoPlayer: AVPlayer) {
@@ -80,15 +88,15 @@ class VideoCell: UITableViewCell {
                     if let status = newStatus {
                         switch status {
                         case .playing:
-                            print("playing")
+                            //   print("playing")
                             self?.playerLayer?.player?.play()
                             self?.activityIndicator.stopAnimating()
                         case .paused:
-                            print("paused")
+                            // print("paused")
                             self?.activityIndicator.stopAnimating()
                             
                         case .waitingToPlayAtSpecifiedRate:
-                            print("waiting")
+                            // print("waiting")
                             self?.activityIndicator.startAnimating()
                             
                         @unknown default:
